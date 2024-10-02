@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --color-white: #FFFFFF;
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.displayNone{
+  display:none;
+}
+.smallCaps{
+  font-variant: small-caps;
+}
+html{
+  font-size:16px;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color: #343d3f;
+}
+
+
+@media screen and (max-width:683px){
+  div#wrapperChartAndSliders{
+    flex-direction: column-reverse;
+    gap:3rem;
+    
+  }
+
+  #monthlyPaymentPieChart{
+    width:25rem;
+    height: 25rem;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width:430px){
+  #monthlyPaymentPieChart{
+    width:20rem;
+    height: 20rem;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width:373px){
+  label.labelSlider{
+    font-size:1.3rem;
+  }
+
+  .sliderBox{
+    width:80%;
+    
+  }
+
+  div.wrapperApp{
+    
+    width: 90%;    
+    margin:auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  div.spansRangeLabels{   
+   width: 80%;
+  }
+}
+
+@media screen and (max-width:350px){
+  div.wrapperApp{  
+    width: 96%;    
+   margin:1rem;   
+    
+  }
+
+  div.monthlyPayment{
+    font-size: 1rem;
+    padding-left:2rem;
+  }
+
+}
